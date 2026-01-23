@@ -1,0 +1,153 @@
+:root {
+  /* Paleta inspirada na Aurora Boreal */
+:root {
+  --aurora-green: #2fffd5;
+  --aurora-teal: #1de9b6;
+  --aurora-blue: #1c9cff;
+  --aurora-purple: #7b5cff;
+  --aurora-dark: #0b132b;
+  --bg-night: #050914;
+  --text-light: #e6f0ff;
+}
+
+.language-switch {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 6px;
+  z-index: 9999;
+}
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: url('images/Fish_Lake_Aurora.png') center/cover no-repeat;
+  color: var(--text-light);
+}
+
+.hero {
+height: 100vh;
+background: url("images/yukon-hero.jpg") center/cover no-repeat;
+position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(5,9,20,0.75), rgba(11,29,58,0.55));
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.language-switch {
+  position: fixed;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  z-index: 9999;
+}
+
+.language-switch img {
+  width: 40px;
+  height: auto;
+  cursor: pointer;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.6);
+  opacity: 0.9;
+}
+
+.language-switch img:hover {
+  opacity: 1;
+}
+
+.language-switch img:hover {
+  opacity: 1;
+}
+
+.language-switch img:hover {
+  opacity: 1;
+}
+
+.logo-container img {
+  max-width: 200px;
+  margin-bottom: 30px;
+}
+
+.main-nav {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero-text h1 {
+  font-size: 2.6rem;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  color: #e5f2ff;
+  max-width: 700px;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.feature {
+  background: rgba(11,19,43,0.85);
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.feature h3 {
+  color: var(--aurora-green);
+  margin-bottom: 10px;
+}
+
+footer {
+  background: linear-gradient(135deg, var(--aurora-purple), var(--aurora-blue), var(--aurora-green));
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+}
+}
