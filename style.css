@@ -185,4 +185,98 @@ footer a:hover {
 .footer-center {
   text-align: center;
 }
+
+.about-section {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+}
+
+/* =================== Mobile & small screens =================== */
+@media (max-width: 768px) {
+
+  /* Header / hero */
+  .hero-overlay {
+    padding: 15px;
+  }
+
+  .logo-container img {
+    max-width: 150px;
+    margin-bottom: 20px;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+
+  .main-nav a {
+    font-size: 16px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+  /* Features section */
+  .features {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .feature {
+    padding: 20px;
+  }
+
+  /* Footer */
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+    padding: 20px 15px;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .footer-right a {
+    margin-left: 10px;
+  }
+
+  .about-section {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .about-image img {
+    max-height: 300px;
+  }
 }

@@ -23,7 +23,10 @@ const translations = {
     
     footer_email: "Email",
     footer_phone: "Tel",
-    footer_rights: "© 2026 Nordic Horizons Yukon. Tous droits réservés. Par "
+    footer_rights: "© 2026 Nordic Horizons Yukon. Tous droits réservés. Par ",
+
+    about_title: "Qui nous sommes",
+    about_text: "Nordic Horizons Yukon offre des services premium de transport touristique et logistique dans le territoire du Yukon. Nous connectons voyageurs, communautés et entreprises tout en explorant les paysages nordiques à couper le souffle."
   },
   
 
@@ -51,7 +54,10 @@ const translations = {
 
     footer_email: "Email",
     footer_phone: "Phone",
-    footer_rights: "© 2026 Nordic Horizons Yukon. All rights reserved. By "
+    footer_rights: "© 2026 Nordic Horizons Yukon. All rights reserved. By ",
+
+    about_title: "Who We Are",
+    about_text: "Nordic Horizons Yukon provides premium tourist transportation and logistics services across the Yukon Territory. We connect travelers, communities, and businesses while exploring the breathtaking northern landscapes."
   }
 };
 
