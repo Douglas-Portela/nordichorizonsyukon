@@ -9,11 +9,17 @@
   <meta name="description" content="Nordic Horizons Yukon offre des services premium de transport touristique et logistique dans le territoire du Yukon, Canada." />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="about-page">
 
 <div class="language-switch">
-  <img src="images/flag-fr.png" alt="Français" onclick="setLanguage('fr')" />
-  <img src="images/flag-us.png" alt="English" onclick="setLanguage('en')" />
+  <div class="lang-item" onclick="setLanguage('fr')">
+    <img src="images/flag.png" alt="Français" />
+    <span>FR</span>
+  </div>
+  <div class="lang-item" onclick="setLanguage('en')">
+    <img src="images/flag.png" alt="English" />
+    <span>EN</span>
+  </div>
 </div>
 
   <div class="hero-overlay">
@@ -29,8 +35,8 @@
     </nav>
 
     <div class="hero-text">
-      <h1 data-i18n="home_title">À propos de nous</h1>
-      <p data-i18n="home_text">..............</p>
+      <h1 data-i18n="about_hero_title"></h1>
+      <p data-i18n="about_hero_text"></p>
     </div>
   </div>
 </header>

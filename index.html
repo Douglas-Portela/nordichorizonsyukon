@@ -12,11 +12,17 @@
 
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="index-page">
 
-<div class="language-switch">
-  <img src="images/flag-fr.png" alt="Français" onclick="setLanguage('fr')" />
-  <img src="images/flag-us.png" alt="English" onclick="setLanguage('en')" />
+  <div class="language-switch">
+  <div class="lang-item" onclick="setLanguage('fr')">
+    <img src="images/flag.png" alt="Français" />
+    <span>FR</span>
+  </div>
+  <div class="lang-item" onclick="setLanguage('en')">
+    <img src="images/flag.png" alt="English" />
+    <span>EN</span>
+  </div>
 </div>
 
   <div class="hero-overlay">
@@ -32,8 +38,8 @@
     </nav>
 
     <div class="hero-text">
-      <h1 data-i18n="home_title">Transport touristique et logistique au cœur du Yukon</h1>
-      <p data-i18n="home_text">Des solutions premium pour relier les paysages sauvages, les communautés et les opportunités du Nord canadien.</p>
+      <h1 data-i18n="home_title"></h1>
+      <p data-i18n="home_text"></p>
     </div>
   </div>
 </header>
@@ -41,16 +47,16 @@
 <main class="content">
   <section class="features">
     <div class="feature">
-      <h3 data-i18n="feature1_title">Expertise nordique</h3>
-      <p data-i18n="feature1_text">Une connaissance approfondie du territoire, des routes isolées et des conditions extrêmes.</p>
+      <h3 data-i18n="feature1_title"></h3>
+      <p data-i18n="feature1_text"></p>
     </div>
     <div class="feature">
-      <h3 data-i18n="feature2_title">Transport touristique</h3>
-      <p data-i18n="feature2_text">Voyagez confortablement à travers les paysages emblématiques du Yukon.</p>
+      <h3 data-i18n="feature2_title"></h3>
+      <p data-i18n="feature2_text"></p>
     </div>
     <div class="feature">
-      <h3 data-i18n="feature3_title">Logistique fiable</h3>
-      <p data-i18n="feature3_text">Solutions adaptées pour marchandises, équipements et projets spécialisés.</p>
+      <h3 data-i18n="feature3_title"></h3>
+      <p data-i18n="feature3_text"></p>
     </div>
   </section>
 </main>

@@ -4,62 +4,55 @@ const translations = {
     menu_about: "À propos",
     menu_photos: "Photos",
     menu_contact: "Contact",
-
     home_title: "Transport touristique et logistique au cœur du Yukon",
-    home_text:
-      "Des solutions premium pour relier les paysages sauvages, les communautés et les opportunités du Nord canadien.",
-
+    home_text: "Des solutions premium pour relier les paysages sauvages, les communautés et les opportunités du Nord canadien.",
     feature1_title: "Expertise nordique",
-    feature1_text:
-      "Une connaissance approfondie du territoire, des routes isolées et des conditions extrêmes.",
-
+    feature1_text: "Une connaissance approfondie du territoire, des routes isolées et des conditions extrêmes.",
     feature2_title: "Transport touristique",
-    feature2_text:
-      "Voyagez confortablement à travers les paysages emblématiques du Yukon.",
-
+    feature2_text: "Voyagez confortablement à travers les paysages emblématiques du Yukon.",
     feature3_title: "Logistique fiable",
-    feature3_text:
-      "Solutions adaptées pour marchandises, équipements et projets spécialisés.",
+    feature3_text: "Solutions adaptées pour marchandises, équipements et projets spécialisés.",
     
+    /* ===== Contato ===== */
+    contact_title: "Contactez-Nous",
+    contact_text: "Nous serons ravis de répondre à vos questions et demandes de transport.",
+    form_name: "Nom",
+    form_email: "Email",
+    form_message: "Message",
+    form_send: "Envoyer",
+
     footer_email: "Email",
     footer_phone: "Tel",
-    footer_rights: "© 2026 Nordic Horizons Yukon. Tous droits réservés. Par ",
-
-    about_title: "Qui nous sommes",
-    about_text: "Nordic Horizons Yukon offre des services premium de transport touristique et logistique dans le territoire du Yukon. Nous connectons voyageurs, communautés et entreprises tout en explorant les paysages nordiques à couper le souffle."
+    footer_rights: "Tous droits réservés. Par"
   },
-  
-
   en: {
     menu_home: "Home",
     menu_about: "About",
     menu_photos: "Photos",
     menu_contact: "Contact",
-
-    home_title: "Tourist transportation and logistics in the heart of Yukon",
-    home_text:
-      "Premium solutions connecting wild landscapes, communities, and opportunities across Northern Canada.",
-
+    home_title: "Tourist and logistics transportation in the heart of Yukon",
+    home_text: "Premium solutions connecting wild landscapes, communities and opportunities in Northern Canada.",
     feature1_title: "Northern expertise",
-    feature1_text:
-      "In-depth knowledge of the territory, remote routes, and extreme northern conditions.",
-
+    feature1_text: "Deep knowledge of remote routes and extreme northern conditions.",
     feature2_title: "Tourist transportation",
-    feature2_text:
-      "Travel comfortably through Yukon’s most iconic and breathtaking landscapes.",
-
+    feature2_text: "Travel comfortably through Yukon’s iconic landscapes.",
     feature3_title: "Reliable logistics",
-    feature3_text:
-      "Tailored logistics solutions for cargo, equipment, and specialized projects.",
+    feature3_text: "Tailored solutions for cargo, equipment and specialized projects.",
+
+    /* ===== Contact ===== */
+    contact_title: "Contact Us",
+    contact_text: "We are happy to answer your questions and transportation requests.",
+    form_name: "Name",
+    form_email: "Email",
+    form_message: "Message",
+    form_send: "Send",
 
     footer_email: "Email",
-    footer_phone: "Phone",
-    footer_rights: "© 2026 Nordic Horizons Yukon. All rights reserved. By ",
-
-    about_title: "Who We Are",
-    about_text: "Nordic Horizons Yukon provides premium tourist transportation and logistics services across the Yukon Territory. We connect travelers, communities, and businesses while exploring the breathtaking northern landscapes."
+    footer_phone: "Tel",
+    footer_rights: "All rights reserved. By"
   }
 };
+
 
 function setLanguage(lang) {
   document.documentElement.lang = lang;
