@@ -8,13 +8,16 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<div class="lightbox" id="lightbox">
-  <span class="lightbox-close">&times;</span>
-  <img class="lightbox-image" src="" alt="">
-</div>
-
 <body class="photos-page">
 
+<!-- ===== Modal único ===== -->
+<div id="mediaModal" class="media-modal">
+  <span class="modal-close">&times;</span>
+  <img id="modalImage" alt="" />
+  <video id="modalVideo" controls></video>
+</div>
+
+<!-- ===== Idiomas ===== -->
 <div class="language-switch">
   <div class="lang-item" onclick="setLanguage('fr')">
     <img src="images/flag.png" alt="Français" />
@@ -26,6 +29,7 @@
   </div>
 </div>
 
+<!-- ===== Header ===== -->
 <div class="hero-overlay">
   <div class="logo-container">
     <img src="images/logo_PeB.png" alt="Logo Nordic Horizons Yukon" />
@@ -39,29 +43,71 @@
   </nav>
 </div>
 
-<!-- ===== Carrossel ===== -->
+<!-- ===== Carrossel principal ===== -->
 <div class="carousel">
   <div class="carousel-track">
-    <div class="carousel-slide"><img src="images/photos/photo1.png" alt="Photo 1"></div>
-    <div class="carousel-slide"><img src="images/photos/photo2.png" alt="Photo 2"></div>
-    <div class="carousel-slide"><img src="images/photos/photo3.png" alt="Photo 3"></div>
+    <div class="carousel-slide"><img src="images/photos/carrocel/photo6.jpg"></div>
+    <div class="carousel-slide"><img src="images/photos/carrocel/photo6.jpg"></div>
+    <div class="carousel-slide"><img src="images/photos/carrocel/photo6.jpg"></div>
   </div>
+
   <div class="carousel-buttons">
     <button class="prev">&#10094;</button>
     <button class="next">&#10095;</button>
   </div>
 </div>
 
-<!-- ===== Grid de fotos ===== -->
-<section class="photo-grid">
-  <img src="images/photos/photo4.png" alt="Photo 4">
-  <img src="images/photos/photo5.png" alt="Photo 5">
-  <img src="images/photos/photo6.png" alt="Photo 6">
-  <img src="images/photos/photo7.png" alt="Photo 7">
-  <img src="images/photos/photo8.png" alt="Photo 8">
-  <img src="images/photos/photo9.png" alt="Photo 9">
+<!-- ================== ÁLBUNS ================== -->
+
+<!-- ===== Álbum: Carcross ===== -->
+<section class="album">
+  <h2 class="album-title" data-i18n="album_carcross">Carcross</h2>
+
+  <div class="album-grid">
+    <img src="images/photos/carcross/photo1.jpg" class="media-item">
+    <img src="images/photos/carcross/photo2.jpg" class="media-item">
+    <img src="images/photos/carcross/photo3.jpg" class="media-item">
+    <img src="images/photos/carcross/photo4.jpg" class="media-item">
+    <img src="images/photos/carcross/photo5.jpg" class="media-item">
+    <img src="images/photos/carcross/photo6.jpg" class="media-item">
+  </div>
 </section>
 
+<!-- ===== Álbum: Logistics ===== -->
+<section class="album">
+  <h2 data-i18n="album_logistics">Logistics Operations</h2>
+
+  <div class="album-carousel">
+    <img src="images/photos/logistics/log1.png" class="media-item">
+    <img src="images/photos/logistics/log2.png" class="media-item">
+  </div>
+</section>
+
+<!-- ===== Álbum: Wildlife ===== -->
+<section class="album">
+  <h2 data-i18n="album_wildlife">Yukon Wildlife</h2>
+
+  <div class="album-carousel">
+    <img src="images/photos/wildlife/wild1.png" class="media-item">
+    <img src="images/photos/wildlife/wild2.png" class="media-item">
+  </div>
+</section>
+
+<!-- ===== Álbum: Vídeos ===== -->
+<section class="album">
+  <h2 data-i18n="album_videos">Videos</h2>
+
+  <div class="album-carousel">
+    <video
+      class="media-item video-thumb"
+      src="videos/video1.mp4"
+      muted
+      playsinline
+    ></video>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
 <footer>
   <div class="footer-content">
     <div class="footer-left">
@@ -72,12 +118,16 @@
         <a href="tel:+18673343213">+1 867 334 3213</a>
       </p>
     </div>
+
     <div class="footer-center">
       <p>
         <span data-i18n="footer_rights"></span>
-        <a href="https://www.seusite.com" target="_blank" rel="noopener">Douglas Portela</a>
+        <a href="https://www.seusite.com" target="_blank" rel="noopener">
+          Douglas Portela
+        </a>
       </p>
     </div>
+
     <div class="footer-right">
       <a href="https://facebook.com/nordichorizonsyukon" target="_blank">
         <img src="images/facebook.png" alt="Facebook">
@@ -91,5 +141,5 @@
 
 <script src="script.js"></script>
 <script src="photos.js"></script>
-</>
+</body>
 </html>

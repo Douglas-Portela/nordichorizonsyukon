@@ -73,5 +73,67 @@ lightbox.addEventListener('click', e => {
 });
 
 /* Inicialização */
-updateCarousel();
-startAutoSlide();
+const modal = document.getElementById('mediaModal');
+const modalImage = document.getElementById('modalImage');
+const modalVideo = document.getElementById('modalVideo');
+const closeBtn = document.querySelector('.modal-close');
+
+/* ===== Abrir fotos ===== */
+document.querydocument.querySelectorAll('.media-item').forEach(item => {
+  item.addEventListener('click', () => {
+    modal.classList.add('active');
+
+    modalImage.style.display = 'none';
+    modalVideo.style.display = 'none';
+    modalVideo.pause();
+
+    if (item.tagName === 'VIDEO') {
+      modalVideo.src = item.src;
+      modalVideo.style.display = 'block';
+      modalVideo.play();
+    } else {
+      modalImage.src = item.src;
+      modalImage.style.display = 'block';
+    }
+  });
+});
+
+/* ===== Upload e abrir vídeo ===== */
+const videoInput = document.getElementById('videoInput');
+
+if (videoInput) {
+  videoInput.addEventListener('change', function () {
+    const file = this.files[0];
+    if (!file) return;
+
+    const videoURL = URL.createObjectURL(file);
+
+    modal.classList.add('active');
+
+    modalImage.style.display = 'none';
+
+    modalVideo.src = videoURL;
+    modalVideo.style.display = 'block';
+    modalVideo.play();
+  });
+}
+
+/* ===== Fechar modal ===== */
+closeBtn.addEventListener('click', () => {
+  modal.classList.remove('active');
+  modalVideo.pause();
+});
+
+modal.addEventListener('click', e => {
+  if (e.target === modal) {
+    modal.classList.remove('active');
+    modalVideo.pause();
+  }
+});
+
+document.querySelectorAll('.album-title').forEach(title => {
+  title.addEventListener('click', () => {
+    const album = title.closest('.album');
+    album.classList.toggle('active');
+  });
+});
