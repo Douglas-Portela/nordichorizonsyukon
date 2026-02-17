@@ -13,7 +13,7 @@
 <!-- ===== Modal único ===== -->
 <div id="mediaModal" class="media-modal">
   <span class="modal-close">&times;</span>
-  <img id="modalImage" alt="" />
+  <img id="modalImage" alt="Photo" />
   <video id="modalVideo" controls></video>
 </div>
 
@@ -46,9 +46,15 @@
 <!-- ===== Carrossel principal ===== -->
 <div class="carousel">
   <div class="carousel-track">
-    <div class="carousel-slide"><img src="images/photos/carrocel/photo6.jpg"></div>
-    <div class="carousel-slide"><img src="images/photos/carrocel/photo6.jpg"></div>
-    <div class="carousel-slide"><img src="images/photos/carrocel/photo6.jpg"></div>
+    <div class="carousel-slide">
+      <img src="images/photos/carrocel/photo6.jpg" alt="Yukon Photo">
+    </div>
+    <div class="carousel-slide">
+      <img src="images/photos/carrocel/photo6.jpg" alt="Yukon Photo">
+    </div>
+    <div class="carousel-slide">
+      <img src="images/photos/carrocel/photo6.jpg" alt="Yukon Photo">
+    </div>
   </div>
 
   <div class="carousel-buttons">
@@ -59,37 +65,45 @@
 
 <!-- ================== ÁLBUNS ================== -->
 
+<!-- ===== Álbum: Whitehorse ===== -->
+<section class="album">
+  <h2 class="album-title" data-i18n="album_whitehorse">Whitehorse</h2>
+
+  <div class="album-grid">
+    <img src="images/photos/whitehorse/photo1.png" class="media-item" alt="">
+    <img src="images/photos/whitehorse/photo2.jpg" class="media-item" alt="">
+    <img src="images/photos/whitehorse/photo3.jpg" class="media-item" alt="">
+    <img src="images/photos/whitehorse/photo4.jpg" class="media-item" alt="">
+    <img src="images/photos/whitehorse/photo5.jpg" class="media-item" alt="">
+    <img src="images/photos/whitehorse/photo6.jpg" class="media-item" alt="">
+  </div>
+</section>
+
 <!-- ===== Álbum: Carcross ===== -->
 <section class="album">
   <h2 class="album-title" data-i18n="album_carcross">Carcross</h2>
 
   <div class="album-grid">
-    <img src="images/photos/carcross/photo1.jpg" class="media-item">
-    <img src="images/photos/carcross/photo2.jpg" class="media-item">
-    <img src="images/photos/carcross/photo3.jpg" class="media-item">
-    <img src="images/photos/carcross/photo4.jpg" class="media-item">
-    <img src="images/photos/carcross/photo5.jpg" class="media-item">
-    <img src="images/photos/carcross/photo6.jpg" class="media-item">
+    <img src="images/photos/carcross/photo1.jpg" class="media-item" alt="">
+    <img src="images/photos/carcross/photo2.jpg" class="media-item" alt="">
+    <img src="images/photos/carcross/photo3.jpg" class="media-item" alt="">
+    <img src="images/photos/carcross/photo4.jpg" class="media-item" alt="">
+    <img src="images/photos/carcross/photo5.jpg" class="media-item" alt="">
+    <img src="images/photos/carcross/photo6.jpg" class="media-item" alt="">
   </div>
 </section>
 
-<!-- ===== Álbum: Logistics ===== -->
+<!-- ===== Álbum: Dawson ===== -->
 <section class="album">
-  <h2 data-i18n="album_logistics">Logistics Operations</h2>
+  <h2 class="album-title" data-i18n="album_dawson">Dawson</h2>
 
-  <div class="album-carousel">
-    <img src="images/photos/logistics/log1.png" class="media-item">
-    <img src="images/photos/logistics/log2.png" class="media-item">
-  </div>
-</section>
-
-<!-- ===== Álbum: Wildlife ===== -->
-<section class="album">
-  <h2 data-i18n="album_wildlife">Yukon Wildlife</h2>
-
-  <div class="album-carousel">
-    <img src="images/photos/wildlife/wild1.png" class="media-item">
-    <img src="images/photos/wildlife/wild2.png" class="media-item">
+  <div class="album-grid">
+    <img src="images/photos/dawson/photo1.png" class="media-item" alt="">
+    <img src="images/photos/dawson/photo2.jpg" class="media-item" alt="">
+    <img src="images/photos/dawson/photo3.jpg" class="media-item" alt="">
+    <img src="images/photos/dawson/photo4.jpg" class="media-item" alt="">
+    <img src="images/photos/dawson/photo5.jpg" class="media-item" alt="">
+    <img src="images/photos/dawson/photo6.jpg" class="media-item" alt="">
   </div>
 </section>
 
@@ -97,7 +111,7 @@
 <section class="album">
   <h2 data-i18n="album_videos">Videos</h2>
 
-  <div class="album-carousel">
+  <div class="album-grid">
     <video
       class="media-item video-thumb"
       src="videos/video1.mp4"
@@ -110,12 +124,17 @@
 <!-- ===== Footer ===== -->
 <footer>
   <div class="footer-content">
+
     <div class="footer-left">
       <p>
         <span data-i18n="footer_email"></span>:
-        <a href="mailto:nordichorizons.yukon@gmail.com">nordichorizons.yukon@gmail.com</a><br>
+        <a href="mailto:nordichorizons.yukon@gmail.com">
+          nordichorizons.yukon@gmail.com
+        </a><br>
         <span data-i18n="footer_phone"></span>:
-        <a href="tel:+18673343213">+1 867 334 3213</a>
+        <a href="tel:+18673343213">
+          +1 867 334 3213
+        </a>
       </p>
     </div>
 
@@ -136,10 +155,10 @@
         <img src="images/instagram.png" alt="Instagram">
       </a>
     </div>
+
   </div>
 </footer>
 
 <script src="script.js"></script>
 <script src="photos.js"></script>
 </body>
-</html>

@@ -79,7 +79,7 @@ const modalVideo = document.getElementById('modalVideo');
 const closeBtn = document.querySelector('.modal-close');
 
 /* ===== Abrir fotos ===== */
-document.querydocument.querySelectorAll('.media-item').forEach(item => {
+document.querySelectorAll('.media-item').forEach(item => {
   item.addEventListener('click', () => {
     modal.classList.add('active');
 
