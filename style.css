@@ -242,6 +242,7 @@ body {
 .album-grid video:hover {
   opacity: 0.85;
 }
+
 .media-modal {
   position: fixed;
   inset: 0;
@@ -256,9 +257,15 @@ body {
   display: flex;
 }
 
-.media-modal img {
+.media-modal img,
+.media-modal video {
   max-width: 90%;
   max-height: 90%;
+  object-fit: contain;
+}
+
+.media-modal video {
+  background: #000;
 }
 
 .modal-close {
