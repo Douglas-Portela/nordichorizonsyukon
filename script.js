@@ -23,7 +23,7 @@ const translations = {
 
     footer_email: "Email",
     footer_phone: "Tel",
-    footer_rights: "Tous droits réservés. Par"
+    footer_rights: "Nordic Horizons Yukon. Copyright © 2026 Tous Droits Réservés. Par"
   },
   en: {
     menu_home: "Home",
@@ -49,7 +49,7 @@ const translations = {
 
     footer_email: "Email",
     footer_phone: "Tel",
-    footer_rights: "All rights reserved. By"
+    footer_rights: "Nordic Horizons Yukon. Copyright © 2026 All Rights Reserved. By"
   }
 };
 

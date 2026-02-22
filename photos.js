@@ -82,6 +82,18 @@ const closeBtn = document.querySelector('.modal-close');
 document.querySelectorAll('.media-item').forEach(item => {
   item.addEventListener('click', () => {
     modal.classList.add('active');
+    modalImage.src = img.src;
+  });
+});
+
+    closeBtn.addEventListener('click', () => {
+  modal.classList.remove('active');
+});
+
+modal.addEventListener('click', e => {
+  if (e.target === modal) {
+    modal.classList.remove('active');
+  }
 
     modalImage.style.display = 'none';
     modalVideo.style.display = 'none';
@@ -96,7 +108,6 @@ document.querySelectorAll('.media-item').forEach(item => {
       modalImage.style.display = 'block';
     }
   });
-});
 
 /* ===== Upload e abrir vídeo ===== */
 const videoInput = document.getElementById('videoInput');
